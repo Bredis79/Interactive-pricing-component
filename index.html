@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+
+<body>
+  <section class="container">
+
+    <h1>Simple, traffic-based pricing</h1>
+    <p class="trial">Sign-up for our 30-day trial. No credit card required.</p>
+    <main class="main">
+      <div class="main__top padding">
+        <p class="main__pageviews">100K Pageviews</p>
+
+        <div class="range">
+          <input type="range" min="0" max="100" step="25" value="50" id="range2" class="range-input" />
+          <div class="value2">0</div>
+        </div>
+
+        <p class="main__month"><span class="main__price" id="total-price">16.00</span> / month</p>
+      </div>
+      <div class="main__middle padding">
+
+        <p>Monthly Billing</p>
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="toggle--period"></label>
+
+        <p>Yearly Billing <span class="discount--mobile">25%</span> <span class="discount--desktop">25% discount</span>
+        </p>
+      </div>
+
+      <div class="main__bottom padding">
+        <ul>
+          <li>Unlimited websites</li>
+          <li>100% data ownership</li>
+          <li>Email reports</li>
+        </ul>
+
+        <button class="main__btn">Start my trial</button>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.frontendmentor.io/profile/Bredis79">Luboš Bräth</a>.
+      </div>
+    </footer>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
